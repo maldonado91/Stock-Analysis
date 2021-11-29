@@ -12,7 +12,7 @@ Before ![Run_Time2017_Before](https://github.com/maldonado91/Stock-Analysis/blob
 ##### Here is 2018
 Before ![Run_Time2018_Before](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/VBA_Challenge_2018_Before.PNG) After ![Run_Time2018_After](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/VBA_Challenge_2018.PNG)
 
-##### You can find final project VBA code [here](https://github.com/maldonado91/Stock-Analysis/blob/main/VBA_Challenge_Completed.vbs)
+##### You can find final project VBA code [here.](https://github.com/maldonado91/Stock-Analysis/blob/main/VBA_Challenge_Complete.vbs)
 
 ### 3. Summary:
 ##### What are the advantages or disadvantages of refactoring code?
