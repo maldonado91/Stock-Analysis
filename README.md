@@ -80,7 +80,7 @@ Before ![Run_Time2018_Before](https://github.com/maldonado91/Stock-Analysis/blob
 
 ### 3. Summary:
 #### What are the advantages or disadvantages of refactoring code?
-The advantages are certainly improved code. We manageed to shrink the amount of code used and made the flow more readable.
+The advantages are certainly improved code. We manageed to shrink the amount of code used and made the macro more readable.
 
 #### How do these pros and cons apply to refactoring the original VBA script?
 In this particular example we established quicker run times which will allow us the potential to analyze more information and additional years. We were able to leverage arrays to provide our output and we only had to run through the rows of tickers one time. Like the code above shows, we specifically used a for loop to run through our data one time as opposed to once for every ticker in the data set. 
