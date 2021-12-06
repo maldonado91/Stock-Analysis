@@ -12,7 +12,7 @@ Before ![Run_Time2017_Before](https://github.com/maldonado91/Stock-Analysis/blob
 ##### Here is 2018
 Before ![Run_Time2018_Before](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/VBA_Challenge_2018_Before.PNG) After ![Run_Time2018_After](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/VBA_Challenge_2018.PNG)
 
-##### Changing the code to run throught the data once was extremely useful. See below for loo used in macro:
+##### Changing the code to run throught the data once was extremely useful. See below for loop used in macro:
     ''2b) Loop over all the rows in the spreadsheet.
     For i = 2 To RowCount
     
@@ -37,6 +37,7 @@ Before ![Run_Time2018_Before](https://github.com/maldonado91/Stock-Analysis/blob
          End If
     
     Next i
+##### Before we ran through the two separate loops to acheive the same output.
 ##### You can find final project VBA code [here.](https://github.com/maldonado91/Stock-Analysis/blob/main/VBA_Challenge_Complete.vbs)
 
 ### 3. Summary:
