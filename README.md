@@ -12,7 +12,7 @@ Before ![Run_Time2017_Before](https://github.com/maldonado91/Stock-Analysis/blob
 ##### Here is 2018
 Before ![Run_Time2018_Before](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/VBA_Challenge_2018_Before.PNG) After ![Run_Time2018_After](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/VBA_Challenge_2018.PNG)
 
-##### Changing the code to run throught the data once was extremely useful. See below for loop used in macro:
+##### Changing the code to run throught the data once was extremely useful. See below 'for loop' used in macro:
     ''2b) Loop over all the rows in the spreadsheet.
     For i = 2 To RowCount
     
@@ -37,7 +37,45 @@ Before ![Run_Time2018_Before](https://github.com/maldonado91/Stock-Analysis/blob
          End If
     
     Next i
-##### Before we ran through the two separate loops to acheive the same output.
+##### Before we ran through the two separate loops to acheive the same output. See below 'for loop' used in macro:
+    For i = 0 To 11
+    
+        ticker = tickers(i)
+        totalVolume = 0
+        
+        'Loop through the data
+        Worksheets(yearValue).Activate
+        For j = 2 To rowEnd
+            
+            If Cells(j, 1).Value = ticker Then
+            
+                totalVolume = totalVolume + Cells(j, 8).Value
+                
+            End If
+            
+            'Find the starting price for the current ticker
+            If Cells(j - 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
+                
+                startingPrice = Cells(j, 6).Value
+                
+            End If
+            
+            'Find ending price for the current ticker
+            If Cells(j + 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
+                
+                endingPrice = Cells(j, 6).Value
+                
+            End If
+            
+         Next j
+         
+         'Outout the data for the current ticker
+         Worksheets("All Stock Analysis").Activate
+         Cells(4 + i, 1).Value = ticker
+         Cells(4 + i, 2).Value = totalVolume
+         Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
+         
+    Next i
 ##### You can find final project VBA code [here.](https://github.com/maldonado91/Stock-Analysis/blob/main/VBA_Challenge_Complete.vbs)
 
 ### 3. Summary:
